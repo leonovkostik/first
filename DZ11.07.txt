@@ -1,0 +1,9 @@
+1).   SELECT firstname FROM player WHERE firstname LIKE 'А%'
+2).   SELECT firstname FROM player WHERE firstname LIKE '%ни%'
+3).   SELECT firstname, lastname FROM player WHERE firstname LIKE '%с' OR lastname LIKE '%с'
+4).   SELECT firstname, lastname FROM player WHERE is_captain = 1
+5).   SELECT firstname, lastname FROM player WHERE position_id = 2
+6).   SELECT firstname, lastname FROM player WHERE position_id = 4 AND team_id = 1
+7).   SELECT firstname, lastname FROM player WHERE position_id = 3 AND team_id = 6
+8).   SELECT * FROM stadium WHERE opacity > 20000
+9).      
