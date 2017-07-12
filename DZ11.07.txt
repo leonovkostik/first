@@ -6,4 +6,10 @@
 6).   SELECT firstname, lastname FROM player WHERE position_id = 4 AND team_id = 1
 7).   SELECT firstname, lastname FROM player WHERE position_id = 3 AND team_id = 6
 8).   SELECT * FROM stadium WHERE opacity > 20000
-9).      
+9).   SELECT SUM(opacity) FROM `stadium` 
+10).  SELECT city_id,COUNT(*) FROM stadium GROUP BY city_id
+11).  SELECT AVG(opacity) FROM `stadium`
+12).  SELECT * FROM stadium WHERE city_id = 1 OR city_id = 3 OR opacity < 25000
+13).  SELECT * FROM `player` WHERE team_id = 2 ORDER BY lastname
+14).  SELECT * FROM `stadium` ORDER BY  opacity DESC
+15).  SELECT COUNT(*) FROM stadium WHERE city_id != 1      
